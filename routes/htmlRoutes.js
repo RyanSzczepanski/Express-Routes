@@ -6,6 +6,7 @@ router.get('/notes', (req, res) => {
 });
 
 router.get('*', (req, res) => {
+    db[db.length] = req.body
     res.sendFile(path.join(__dirname, '../public/index.html'));
 });
 
