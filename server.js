@@ -5,8 +5,8 @@ const apiRoutes = require('./routes/apiRoutes');
 const app = express();
 const port = 3001;
 
-app.use('/', htmlRoutes);
 app.use('/api', apiRoutes);
+app.use('/', htmlRoutes);
 
 app.listen(port, () => {
     console.log(`Express Challenge app at http://localhost:${port}`);
