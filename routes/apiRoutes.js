@@ -1,6 +1,4 @@
 const router = require('express').Router();
-const path = require('path');
-const db = require('../db/db');
 const DataBase = require('../db/dbManage.js');
 
 router.get('/notes', (req, res) => {
