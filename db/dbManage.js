@@ -26,7 +26,6 @@ class DataBase {
 
 function updateIdsFrom(start){
     let db = [].concat(JSON.parse(read('db/db.json', 'utf8')));
-    console.log(start)
     for(let i = start; i < db.length; i++){
         //parse int because for some reason when i is 0 it returns i as a string rather than int
         db[i].id = parseInt(i);
